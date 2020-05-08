@@ -1,0 +1,183 @@
+.modal:not(.open) {
+    display: none;
+  }
+  
+  .modal.open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    backdrop-filter: blur(6px);
+  }
+  
+  .modal .content {
+    font-family: 'Noto Sans', sans-serif;
+    width: 480px;
+    padding: 12px;
+    min-height: 200px;
+    background: white;
+    box-shadow: 0 2px 12px -8px black;
+  }
+  
+  .modal h3 {
+    font-size: 24px;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #888;
+  }
+  
+  .modal form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal label {
+    margin: 12px 0 4px;
+  }
+  
+  .modal input, 
+  .modal textarea {
+    background: #ddd;
+    padding: 8px;
+    font-size: 22px;
+  }
+  
+  .modal .actions {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .modal .action {
+    border-radius: 6px;
+    box-shadow: 0 2px 6px -2px black;
+    cursor: pointer;
+  }
+  
+  .modal .action.when-invalid {
+    background: #777;
+  }
+  
+  .modal .action:not(.when-invalid):hover {
+    background: #33f;
+  }
+  
+  
+  .modal .action:not(:first-of-type) {
+    margin-left: 12px;
+  }
+  
+  .modal .action span {
+    margin-left: 6px;
+    font-weight: bold;
+    letter-spacing: 1.1;
+    text-transform: uppercase;
+  }
+  
+  .modal input:invalid:required {
+    border-bottom: 3px solid red;
+  }
+  
+  .modal input:valid:required + h5 {
+    display: none;
+  }
+  
+
+  .sign-up-modal:not(.open) {
+    display: none;
+  }
+  
+  .sign-up-modal.open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    backdrop-filter: blur(6px);
+  }
+  
+  .sign-up-modal .content {
+    font-family: 'Noto Sans', sans-serif;
+    width: 480px;
+    padding: 12px;
+    min-height: 200px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2px 12px -8px black;
+  }
+  
+  .sign-up-modal h3 {
+    font-size: 24px;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #888;
+  }
+  
+  .sign-up-modal form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sign-up-modal label {
+    margin: 12px 0 4px;
+  }
+  
+  .sign-up-modal input, 
+  .sign-up-modal textarea {
+    background: #ddd;
+    padding: 8px;
+    font-size: 22px;
+  }
+  
+  .sign-up-modal .actions {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .sign-up-modal .action {
+    border-radius: 6px;
+    box-shadow: 0 2px 6px -2px black;
+    cursor: pointer;
+  }
+  
+  .sign-up-modal .action.when-invalid {
+    background: #777;
+  }
+  
+  .sign-up-modal .action:not(.when-invalid):hover {
+    background: #33f;
+  }
+  
+  
+  .sign-up-modal .action:not(:first-of-type) {
+    margin-left: 12px;
+  }
+  
+  .sign-up-modal .action span {
+    margin-left: 6px;
+    font-weight: bold;
+    letter-spacing: 1.1;
+    text-transform: uppercase;
+  }
+  
+  .sign-up-modal input:invalid:required {
+    border-bottom: 3px solid red;
+  }
+  
+  .sign-up-modal input:valid:required + h5 {
+    display: none;
+  }
+  

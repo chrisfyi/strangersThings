@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strangers Things</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class ='title'><h1> Welcome to Strangers Things!
+  </h1></header>
+    <div id='app'>
+     
+        <!-- <main id='posts'></main> -->
+
+        <!-- <form id='newPostForm'></form> -->
+
+        <input id='searchBar'/>
+        <button id="signUp">Sign Up</button>
+        <button id='login'>Login</button>
+         
+        <button id='createNewPost'>Create Post </button>
+
+      </div>
+
+     <div class = 'modal'>
+       <div class = 'content'>
+         <h3>Create New Post</h3>
+         <form class = 'newPostForm' action='' method=''>
+           <label for='newPostTitle'>Post Title</label>
+           <input type='text' id='newPostTitle' required>
+           <h5>Title is required*</h5>
+           <label for="newPostDescription">Description:</label>
+            <textarea id="newPostDescription" columns="40" rows="5"></textarea>
+          <label for='newPostPrice'>Price:</label>
+           <input type='text' id='newPostPrice' required>
+           <h5>Price is required*</h5>
+           <label for='newPostDelivery'>Delivery Available?</label>
+           <input type='text' id='newPostDelivery' required>
+           <h5>Delivery Input is required*</h5>
+        <div class = 'newPostActions'>
+            <button class = 'createPost'>Create Post</button>
+            <button class = 'cancelPost'>Cancel</button>
+        </div>
+         </form>
+       </div>
+     </div>
+     
+     <div class ='sign-up-modal'>
+       <div class = 'sign-up-content'>
+         <h3>Sign Up</h3>
+         <form class = 'newUserSignUp' action='' method= ''>
+           <label for='newUsername'>Username:</label>
+           <input type ='text' id='newUsername' required>
+           <h6>Username is required*</h6>
+          <label for='newUserPassword'>Password:</label>
+          <input type = 'text' id='newUserPassword' required>
+          <h6>Password us required*</h6>
+        <div class = 'newUserActions'>
+          <button class= 'submitNewUser'>Submit</button>
+          <button class = 'cancelNewUser'>Cancel</button>
+        </div>
+         </form>
+       </div>
+     </div>
+<footer></footer>
